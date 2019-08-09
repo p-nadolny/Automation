@@ -9,12 +9,21 @@ public class WomenPage {
 
     @FindBy(xpath = "/html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[1]/a")
     public WebElement womenPageLink;
+
     @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div[1]/div[2]/p")
     public WebElement catalogTitle;
+
     @FindBy(id = "layered_category_4")
     public WebElement checkboxTops;
+
     @FindBy(id = "layered_id_attribute_group_2")
     public WebElement checkboxSize;
+
+    @FindBy(xpath = "//*[@id=\"layered_condition_new\"]")
+    public WebElement checkboxNew;
+
+    @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div[1]/div[2]/div[1]/form/div/div[10]/ul/div/div/a[2]")
+    public WebElement rightSlider;
 
     public WomenPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
