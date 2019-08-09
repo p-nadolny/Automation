@@ -31,13 +31,16 @@ public class SearchResultPage {
     public WebElement getSearchHeader() {
         return searchHeader;
     }
+
     public WebElement getCart() {
         return cart;
     }
 
-    public void clickinAddToCartButton() {
+    public void clickAddToCartButton() {
         addToCartButton.click();
     }
+
+    public WebElement getAddToCartButton() { return addToCartButton; }
 
     public void getCartDisplayed(WebDriver driver) {
         Actions builder = new Actions(driver);
